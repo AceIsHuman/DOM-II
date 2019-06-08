@@ -368,3 +368,6 @@ img {
 .font-color-red {
   color: red;
 }
+.drop-shadow {
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.5);
+}

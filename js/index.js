@@ -18,3 +18,12 @@ input.forEach(elm => elm.addEventListener('blur', function(){this.style.backgrou
 const textContent = document.querySelectorAll('p');
 textContent.forEach(elm => elm.addEventListener('drag', function(){this.style.color = 'red'}));
 textContent.forEach(elm => elm.addEventListener('dragend', function(){this.style.color = 'black'}));
+
+const mainHeader = document.querySelector('header.intro');
+mainHeader.addEventListener('mousedown', function(){this.classList.toggle('drop-shadow')});
+
+const headerImg = document.querySelector('img');
+headerImg.addEventListener('mousedown', function(){
+    event.stopPropagation();
+    this.style.display = 'none'
+});
