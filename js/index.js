@@ -27,3 +27,5 @@ headerImg.addEventListener('mousedown', function(){
     event.stopPropagation();
     this.style.display = 'none'
 });
+
+this.addEventListener('load', () => alert('THE PAGE HAS LOADED!'));
