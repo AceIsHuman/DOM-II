@@ -29,3 +29,14 @@ headerImg.addEventListener('mousedown', function(){
 });
 
 this.addEventListener('load', () => alert('THE PAGE HAS LOADED!'));
+
+const body = document.querySelector('body');
+function breakPage() {
+    body.style.display = 'none';
+    alert('Deleting page content...');
+}
+
+body.addEventListener('dblclick', breakPage);
+
+let nav = document.querySelectorAll('.nav a');
+nav.forEach(elm => elm.addEventListener('click', () => event.preventDefault()));
