@@ -350,3 +350,24 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home .contact {
+  font-family: Roboto, sans-serif;
+}
+.home .contact input {
+  padding: 0.5rem;
+  width: 75%;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.float-up {
+  position: relative;
+  z-index: 100;
+  top: -5px;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.font-color-red {
+  color: red;
+}
+.drop-shadow {
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.5);
+}
